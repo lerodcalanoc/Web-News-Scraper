@@ -1,7 +1,5 @@
 # Web-News-Scraper
 
-# Eat Da Burger!
-
 ![](https://media.giphy.com/media/n2IPMYMthV0m4/giphy.gif)
 
 ["Click here to launch the app"](https://vast-depths-84495.herokuapp.com/)
