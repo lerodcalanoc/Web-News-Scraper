@@ -1,0 +1,47 @@
+
+<div class="container mt-3">
+  <div class="heading jumbotron">
+    <h1 class="text-center">
+      <span>
+        Your Web Development News Portal
+      </span>
+    </h1>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <row class="col-12" id="articleList">
+        {{#each articles}}
+        <div class="row d-flex justify-content-between article-div my-3 py-2 bg-light" id="{{this.id}}">
+          <div class="col-md-7">
+            <div class="row">
+
+              {{!-- Article Image --}}
+              <div class="col-md-4">
+                <img src="{{this.image}}" alt="Article Image" class="article-image">
+              </div>
+              {{!-- Article Text --}}
+              <div class="col-md-8">
+                <a class="" href="{{this.link}}" target="_blank">
+                  <h4>{{this.title}}</h4>
+                </a>
+                <p class="article-brief">{{this.brief}}</p>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-md-4 buttons">
+          {{#if this.saved}}
+            <button class="btn btn-info view-notes">Add Note</button>
+            <button class="btn btn-danger delete-article">Delete Article</button>
+          {{else}}
+            <button class="btn btn-success save-article">Save Article</button>
+          {{/if}}
+          </div>
+        </div>
+        {{/each}}
+
+    </row>
+  </div>
+</div>

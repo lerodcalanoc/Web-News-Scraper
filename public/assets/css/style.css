@@ -1,0 +1,43 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+
+body {
+    background-color: #3399ff
+}
+
+/* Navbar Styles */
+.navbar-brand{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+/* Heading Style */
+.heading {
+    background-image: url("../img/header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.heading h1 {
+    background-color: rgba(0,0,0,0.6);
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Article List */
+.article-image {
+    object-fit: contain;
+}
+
+#logo {
+    color: #3399ff
+}
+
+#scraped {
+    margin-right: 5px
+}
+
+/* Start http://www.cursors-4u.com */ * {cursor: url(http://cur.cursors-4u.net/cursors/cur-2/cur117.cur), auto !important;} /* End http://www.cursors-4u.com */
