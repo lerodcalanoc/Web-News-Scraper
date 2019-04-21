@@ -9,7 +9,7 @@ This news scraper app allows users to scrape news articles from the web and disp
 
 
 
-Technology and Packages used:
+**Technology and Packages used:**
 
     Node.js
 
