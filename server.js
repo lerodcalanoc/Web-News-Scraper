@@ -10,8 +10,6 @@ const PORT = process.env.PORT || 8080;
 // Initialize Express
 const app = express();
 
-// Configure middleware
-
 // Use morgan logger for logging requests
 app.use(logger("dev"));
 // Parse request body as JSON
@@ -21,7 +19,6 @@ app.use(express.json());
 app.use(express.static("public"));
 
 // If deployed, use the deployed database. Otherwise use the local mongoHeadlines database
-// eslint-disable-next-line no-undef
 const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
 
 // Connect to the Mongo DB
@@ -38,7 +35,6 @@ require("./routes/htmlRoutes")(app, db);
 
 // Start the server
 app.listen(PORT, () => {
-  // eslint-disable-next-line no-console
   console.log(
     "==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.",
     PORT,
