@@ -4,7 +4,6 @@
 
 ["Click here to launch the app"](https://vast-depths-84495.herokuapp.com/)
 
-"Click here to launch the app"
 
 This news scraper app allows users to scrape news articles from the web and display them for the user. Users can then view and leave comments on saved articles. This app uses Cheerio to scrape news and stores them in MongoDB using Mongoose.
 
