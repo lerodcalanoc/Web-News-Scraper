@@ -39,25 +39,12 @@
                     Saved Articles
                   </a>
                 </li>
+                  <li class="nav-item" id="removeScraped">
+                  <a class="btn btn-outline-danger my-2 my-sm-0" href="/api/articles/remove-all">
+                    Remove Scraped Articles
+                  </a>
+                </li>
               </ul>
-                
-              <li class="nav-item dropleft">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                  OPTIONS
-                </a>
-                <div class="dropdown-menu">
-                  {{!-- <h6 class="dropdown-header">API Actions</h6> --}}
-                  {{!-- <div class="dropdown-divider"></div> --}}
-                  {{!-- <a class="dropdown-item" href="/api/articles/all">GET All Articles</a>
-                  <a class="dropdown-item" href="/api/articles/scraped">GET Scraped Articles</a>
-                  <a class="dropdown-item" href="/api/articles/saved">GET Saved Articles</a> --}}
-                  {{!-- <div class="dropdown-divider"></div> --}}
-                  <a class="dropdown-item" href="/api/articles/remove-scraped">REMOVE Scraped Articles</a>
-                  <a class="dropdown-item" href="/api/articles/remove-all">REMOVE All Articles</a>
-                </div>
-              </li>
-
-            </ul>
           </div>
         </div>
       </nav>
@@ -72,6 +59,7 @@
             </div>
             <div class="modal-body">
               <p>Modal Body</p>
+              <hr>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Confirm</button>
@@ -89,14 +77,14 @@
               <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
             </div>
             <div class="modal-body">
-              <p>Modal Body</p>
+              <h5>Your Notes :</h5>
               <div class="row">
                 <div class="col-8 offset-2 notes" id="divNotes">
-
                 </div>
               </div>
               <div class="form-group col-10 offset-1">
-                <label for="noteInput">Note</label>
+                <hr>
+                <h4><label for="noteInput">Add Note</label></h4>
                 <textarea class="form-control" id="noteInput" name="note" rows="3"></textarea>
               </div>
             </div>

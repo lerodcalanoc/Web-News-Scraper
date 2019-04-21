@@ -21,8 +21,8 @@ var ArticleSchema = new Schema({
     type: String,
     required: true
   },
-  // `brief` is required and of type String
-  brief: {
+  // `summary` is required and of type String
+  summary: {
     type: String,
     required: true
   },

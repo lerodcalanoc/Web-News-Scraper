@@ -26,7 +26,7 @@ const drawAndShowModal = (title, message) => {
 const drawAndShowNotesModal = (title, message, article) => {
   // Draw the response Message in the Modal
   $("#notesModal .modal-title").text(article.title);
-  $("#notesModal .modal-body > p").text(article.brief);
+  $("#notesModal .modal-body > p").text(article.summary);
   // Draw the article Notes
   article.notes.forEach( note => {
     // console.log(note.body);
@@ -153,7 +153,7 @@ const deleteArticleFromSaved = (e) => {
   )
     .then(response => {
       // console.log(response);
-      drawAndShowModal("Article Saved", title);
+      drawAndShowModal("Article Deleted", title);
       setTimeout(() => location.reload(), defaultTimeOut);
     })
     .catch(error => {

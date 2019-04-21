@@ -17,7 +17,7 @@ module.exports = (app, db) => {
           result.image = $(this).children(".thm").children("a").children("img").attr("src");
           result.title = $(this).children(".btmborder").children("h4").children("a").text();
           result.link = $(this).children(".btmborder").children("h4").children("a").attr("href");
-          result.brief = $(this).children(".btmborder").children("p").text().replace("… continue reading", "...");
+          result.summary = $(this).children(".btmborder").children("p").text().replace("… continue reading", "...");
   
           // Custom Implementation of Find or Create
           // This will prevent to duplicate Articles
@@ -100,8 +100,9 @@ module.exports = (app, db) => {
         .catch(err =>res.json(err));
     } 
     else if (removeOptions.includes(urlOption)) {
-      db.Article.remove(query)
-        .then(result => res.json(result))
+      db.Article.deleteMany(query)
+        .then(result => res.redirect('/'))
+        // .then(result => res.json(result))
         .catch(err =>res.json(err));
     } else {
       res.json({msg: "GET /api/articles/:option NO OPTION MATCHING"});
