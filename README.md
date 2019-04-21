@@ -1,4 +1,4 @@
-# Web-News-Scraper
+# Web News Scraper
 
 ![](https://media.giphy.com/media/n2IPMYMthV0m4/giphy.gif)
 
